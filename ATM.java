@@ -8,7 +8,7 @@ class ATMFeatures {
         System.out.println("Enter your PIN :- ");
         Scanner sc = new Scanner (System.in);
         int userpin = sc.nextInt() ;
-        // sc.close();
+        sc.close();
         if(userpin==PIN){
             menu() ;
         }
@@ -26,7 +26,7 @@ class ATMFeatures {
 
         Scanner sc = new Scanner(System.in);
         int options = sc.nextInt() ;
-        // sc.close();
+        sc.close();
         
         if (options ==1 ){
             CheckBalance() ;
@@ -60,7 +60,7 @@ class ATMFeatures {
         Balance= Balance + amount ;
         System.out.println("Amount added successfully..");
         menu();
-        // sc.close();
+        sc.close();
     }
     public void Withdraw(){
         System.out.println("Enter the amount to withdraw..");
@@ -76,7 +76,7 @@ class ATMFeatures {
 
         }
         menu();
-        // sc.close();
+        sc.close();
 
     }
     
